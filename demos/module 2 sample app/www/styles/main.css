@@ -1,0 +1,6 @@
+/* Main app CSS */ 
+.km-hamburger:after,
+.km-hamburger:before
+{
+    content: "\e077";
+}

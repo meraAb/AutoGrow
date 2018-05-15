@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width">
+
+	<!-- Kendo UI Mobile styles for all supported platforms -->
+    <link href="http://cdn.kendostatic.com/2013.2.716/styles/kendo.mobile.all.min.css" rel="stylesheet">
+    <!-- This app's styles -->
+	<link href="styles/main.css" rel="stylesheet" /> 
+</head>
+<body onload="initialize();">
+	<div data-role="view" id="drawer-home" data-title="Picture Viewer">
+		<header data-role="header">
+			<div data-role="navbar">
+				<a data-role="button" data-rel="drawer" href="#my-drawer" data-icon="hamburger" data-align="left"></a>
+				<span data-role="view-title"></span>
+			</div>
+		</header>
+
+		<div id="mainContent" style="margin:auto; width:50%">
+			<h1>My Images</h1>
+			<img id="curImage" style="margin-bottom:30px;" src="img/pg.jpeg" height="200px" width="200px" />
+			<div id="imageCarousel"></div>
+		</div>
+
+		<div data-role="footer">
+			<div data-role="tabstrip">
+				<a id="btnAddPic" style="font-size: 1.0em" data-role="button" data-icon="add" onclick="controller.takePicture();"></a>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="view" id="drawer-about" data-title="About">
+		<ul data-role="listview" data-style="inset" data-type="group">
+			<li>Pluralsight - Advanced PhoneGap Build - Module 2
+				<ul>
+					<li>This is the sample application for Module 2. </li>
+					<li>This app allows the user to take a picture, cache it, and add it to a carousel of pictures.</li>
+				</ul>
+        </ul>
+	</div>
+
+	<!-- Define the drawer -->
+	<div data-role="drawer" id="my-drawer" data-views="['drawer-home', 'drawer-about', 'index.html']">
+	    <ul data-role="listview" data-type="group">
+	        <li>Main
+	            <ul>
+	                <li data-icon="home"><a href="#drawer-home" data-transition="none">Picture Viewer</a></li>
+	                <li data-icon="info"><a href="#drawer-about" data-transition="none">About</a></li>
+	            </ul>
+	        </li>
+	    </ul>
+	</div>
+	
+	<!-- Define the header and footer -->
+	<div data-role="layout" data-id="drawer-layout">
+		<header data-role="header">
+			<div data-role="navbar">
+				<a data-role="button" data-rel="drawer" href="#my-drawer" data-icon="hamburger" data-align="left"></a>
+				<span data-role="view-title"></span>
+			</div>
+		</header>
+	</div>
+
+	<!-- PG Build service injects this (do not include yourself!), but still need a reference here -->
+	<script src="phonegap.js"></script>
+	
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/phonegapAppPlugins.js"></script>
+    <script src="scripts/controller.js"></script>
+
+    <!-- Kendo UI JavaScript -->
+    <script src="http://cdn.kendostatic.com/2013.2.716/js/kendo.all.min.js"></script>
+    <script type="text/javascript">
+			// PhoneGap is ready - begin using plugins here
+			function onDeviceReady() {
+				
+			}
+
+			function initialize() {
+				// register device ready event - called when PhoneGap is fully loaded
+				document.addEventListener("deviceready", onDeviceReady, false);
+			}
+	</script>
+	
+    <script type="text/javascript">
+		controller.init();
+    </script>
+</body>
+</html>

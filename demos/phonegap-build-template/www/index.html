@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width">
+
+	<!-- Kendo UI Mobile styles for all supported platforms -->
+    <link href="http://cdn.kendostatic.com/2013.2.716/styles/kendo.mobile.all.min.css" rel="stylesheet">
+    <!-- This app's styles -->
+	<link href="styles/main.css" rel="stylesheet" /> 
+</head>
+<body onload="initialize();">
+	<!-- Define each tab -->
+	<div data-role="view" id="tabstrip-home" data-title="Home">
+		<h1>Hello, World! App content goes here.</h1>
+	</div>
+	
+	<div data-role="view" id="tabstrip-activity" data-title="Activity" align="center">
+		<h1>...and here.</h1>
+	</div>
+	
+	<!-- Define the header and footer -->
+	<div data-role="layout" data-id="mobile-tabstrip">
+		<header data-role="header">
+			<div data-role="navbar">
+				<span data-role="view-title"></span>
+			</div>
+		</header>
+
+		<div data-role="footer">
+			<div data-role="tabstrip">
+				<a href="#tabstrip-home" data-icon="home">Home</a>
+				<a href="#tabstrip-activity" data-icon="toprated">Activity</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- PG Build service injects this (do not include yourself!), but still need a reference here -->
+	<script src="phonegap.js"></script>
+	
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/phonegapAppPlugins.js"></script>
+    <script src="scripts/controller.js"></script>
+    <script src="scripts/dataRepository.js"></script>
+
+    <!-- Kendo UI JavaScript -->
+    <script src="http://cdn.kendostatic.com/2013.2.716/js/kendo.all.min.js"></script>
+    <script type="text/javascript">
+			// PhoneGap is ready - begin using plugins here
+			function onDeviceReady() {
+				
+			}
+
+			function initialize() {
+				// register device ready event - called when PhoneGap is fully loaded
+				document.addEventListener("deviceready", onDeviceReady, false);
+			}
+	</script>
+	
+    <script type="text/javascript">
+		// initialize kendo mobile app - only line needed to get started
+        var app = new kendo.mobile.Application(document.body, { transition: "slide", layout: "mobile-tabstrip" });
+		
+		// other init code:
+		
+    </script>
+</body>
+</html>
