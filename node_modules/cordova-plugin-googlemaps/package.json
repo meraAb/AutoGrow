@@ -1,0 +1,81 @@
+{
+  "_from": "cordova-plugin-googlemaps@2.3.1",
+  "_id": "cordova-plugin-googlemaps@2.3.1",
+  "_inBundle": false,
+  "_integrity": "sha1-T+11rWNlGDKtS21Ycn+AuuqI6/o=",
+  "_location": "/cordova-plugin-googlemaps",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cordova-plugin-googlemaps@2.3.1",
+    "name": "cordova-plugin-googlemaps",
+    "escapedName": "cordova-plugin-googlemaps",
+    "rawSpec": "2.3.1",
+    "saveSpec": null,
+    "fetchSpec": "2.3.1"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-googlemaps/-/cordova-plugin-googlemaps-2.3.1.tgz",
+  "_shasum": "4fed75ad63651832ad4b6d58727f80baea88ebfa",
+  "_spec": "cordova-plugin-googlemaps@2.3.1",
+  "_where": "C:\\Workspace\\AutoGrow",
+  "author": {
+    "name": "Masashi Katsumata, Hirbod Mirjavadi"
+  },
+  "bugs": {
+    "url": "https://github.com/mapsplugin/cordova-plugin-googlemaps/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-googlemaps",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {
+    "minimist": "~1.2.0",
+    "xml2js": "~0.4.19"
+  },
+  "deprecated": false,
+  "description": "Google Maps native SDK for Android and iOS",
+  "engines": [
+    {
+      "name": "cordova-android",
+      "version": ">=5.1.0"
+    },
+    {
+      "name": "cordova-ios",
+      "version": ">=4.9.0"
+    },
+    {
+      "name": "apple-xcode",
+      "version": ">=9.0.0"
+    },
+    {
+      "name": "apple-ios",
+      "version": ">=10.0.0"
+    }
+  ],
+  "homepage": "https://github.com/mapsplugin/cordova-plugin-googlemaps",
+  "keywords": [
+    "google",
+    "maps",
+    "geo",
+    "google maps",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "Apache 2.0",
+  "name": "cordova-plugin-googlemaps",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mapsplugin/cordova-plugin-googlemaps.git"
+  },
+  "version": "2.3.1"
+}
