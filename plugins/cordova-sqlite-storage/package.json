@@ -1,0 +1,65 @@
+{
+  "_from": "git+https://github.com/brodysoft/Cordova-SQLitePlugin.git",
+  "_id": "cordova-sqlite-storage@2.3.1",
+  "_inBundle": false,
+  "_location": "/cordova-sqlite-storage",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/brodysoft/Cordova-SQLitePlugin",
+    "rawSpec": "https://github.com/brodysoft/Cordova-SQLitePlugin",
+    "saveSpec": "git+https://github.com/brodysoft/Cordova-SQLitePlugin.git",
+    "fetchSpec": "https://github.com/brodysoft/Cordova-SQLitePlugin.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/brodysoft/Cordova-SQLitePlugin.git#09e9be14bfc463399f911abdfaf5be941c168ebb",
+  "_spec": "https://github.com/brodysoft/Cordova-SQLitePlugin",
+  "_where": "C:\\Workspace\\AutoGrow",
+  "author": {
+    "name": "various"
+  },
+  "bugs": {
+    "url": "https://github.com/litehelpers/Cordova-sqlite-storage/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-sqlite-storage",
+    "platforms": [
+      "android",
+      "ios",
+      "osx",
+      "windows"
+    ]
+  },
+  "dependencies": {
+    "cordova-sqlite-storage-dependencies": "1.2.0"
+  },
+  "deprecated": false,
+  "description": "Native interface to SQLite for PhoneGap/Cordova",
+  "devDependencies": {
+    "shelljs": "^0.7.4"
+  },
+  "homepage": "https://github.com/litehelpers/Cordova-sqlite-storage",
+  "keywords": [
+    "sqlite",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-osx",
+    "cordova-windows"
+  ],
+  "license": "MIT",
+  "name": "cordova-sqlite-storage",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/litehelpers/Cordova-sqlite-storage.git"
+  },
+  "scripts": {
+    "start": "node scripts/prepareSpec.js"
+  },
+  "version": "2.3.1"
+}
