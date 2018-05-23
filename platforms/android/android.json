@@ -19,10 +19,6 @@
             {
               "xml": "<feature name=\"Geolocation\"><param name=\"android-package\" value=\"org.apache.cordova.geolocation.Geolocation\" /></feature>",
               "count": 1
-            },
-            {
-              "xml": "<feature name=\"SQLitePlugin\"><param name=\"android-package\" value=\"io.sqlc.SQLitePlugin\" /></feature>",
-              "count": 1
             }
           ]
         }
@@ -55,9 +51,6 @@
       "PACKAGE_NAME": "come.late.eight"
     },
     "cordova-plugin-geolocation": {
-      "PACKAGE_NAME": "come.late.eight"
-    },
-    "cordova-sqlite-storage": {
       "PACKAGE_NAME": "come.late.eight"
     }
   },
@@ -92,20 +85,11 @@
       "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
       "pluginId": "cordova-plugin-geolocation",
       "runs": true
-    },
-    {
-      "id": "cordova-sqlite-storage.SQLitePlugin",
-      "file": "plugins/cordova-sqlite-storage/www/SQLitePlugin.js",
-      "pluginId": "cordova-sqlite-storage",
-      "clobbers": [
-        "SQLitePlugin"
-      ]
     }
   ],
   "plugin_metadata": {
     "cordova-plugin-whitelist": "1.3.3",
     "cordova-plugin-dialogs": "2.0.1",
-    "cordova-plugin-geolocation": "4.0.1",
-    "cordova-sqlite-storage": "2.3.1"
+    "cordova-plugin-geolocation": "4.0.1"
   }
 }

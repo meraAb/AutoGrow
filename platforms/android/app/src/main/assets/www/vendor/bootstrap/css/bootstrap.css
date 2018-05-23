@@ -5290,6 +5290,10 @@ a.bg-light:focus, a.bg-light:hover {
   background-color: #343a40 !important;
 }
 
+.bg-dark2 {
+  background-color: #0e0e0e !important;
+}
+
 a.bg-dark:focus, a.bg-dark:hover {
   background-color: #1d2124 !important;
 }

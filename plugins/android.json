@@ -15,9 +15,6 @@
     },
     "cordova-plugin-geolocation": {
       "PACKAGE_NAME": "come.late.eight"
-    },
-    "cordova-sqlite-storage": {
-      "PACKAGE_NAME": "come.late.eight"
     }
   },
   "dependent_plugins": {}

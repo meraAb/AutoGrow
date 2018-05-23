@@ -8,7 +8,9 @@ html {
   min-height: 100%; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden; 
+  background-color: #000;
+}
 
 body.sticky-footer {
   margin-bottom: 56px; }
@@ -16,11 +18,13 @@ body.sticky-footer {
     min-height: calc(100vh - 56px - 56px); }
 
 body.fixed-nav {
-  padding-top: 56px; }
+  padding-top: 70px; }
 
 .content-wrapper {
-  min-height: calc(100vh - 56px);
-  padding-top: 1rem; }
+  min-height: calc(100vh - px);
+ 
+  background: #343a40;
+  }
 
 .scroll-to-top {
 	position: fixed;
@@ -169,7 +173,7 @@ body.fixed-nav {
         padding: 1em; } }
 
 #mainNav.fixed-top.navbar-dark .sidenav-toggler {
-	background-color: #006600;
+	background-color: #7fc600;
 }
   #mainNav.fixed-top.navbar-dark .sidenav-toggler a i {
 	color: #009900;
@@ -244,19 +248,19 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
   display: flex; }
 
 #mainNav.navbar-dark .navbar-collapse .navbar-sidenav .nav-link-collapse:after {
-	color: #003300;
+	color: #7bc001;
 }
 
 #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item > .nav-link {
-	color: #99FFCC;
+	color: #fff;
 }
   #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item > .nav-link:hover {
-	color: #99FFCC;
+	color: #fff;
 }
 
 #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a,
 #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level > li > a {
-	color: #009933;
+	color: #7bc001;
 }
   #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a:focus, #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a:hover,
   #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level > li > a:focus,
@@ -273,7 +277,7 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
     background: #343a40; }
     #mainNav.navbar-dark .navbar-collapse .navbar-sidenav li.active a {
 	color: white !important;
-	background-color: #99FFCC;
+	background-color: #ffffff;
 }
       #mainNav.navbar-dark .navbar-collapse .navbar-sidenav li.active a:focus, #mainNav.navbar-dark .navbar-collapse .navbar-sidenav li.active a:hover {
         color: white; }
@@ -285,7 +289,7 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
   color: rgba(0, 0, 0, 0.5); }
 
 #mainNav.navbar-light .navbar-collapse .navbar-sidenav > .nav-item > .nav-link {
-	color: rgba(0,51,0,0.5);
+	color:#;
 }
   #mainNav.navbar-light .navbar-collapse .navbar-sidenav > .nav-item > .nav-link:hover {
     color: rgba(0, 0, 0, 0.7); }
